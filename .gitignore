@@ -1,0 +1,12 @@
+.venv
+.venv/
+venv
+venv/
+wandb
+wand/
+.wandb
+.wandb/
+local_model/
+local_model
+.local_model/
+.local_model

@@ -1,0 +1,14 @@
+paths_config:
+  dataset_folder: "./training_datasets"  # Folder where .jsonl files are stored
+  output_folder: "./chatml_datasets"  # Folder where .txt files will be saved
+  chatml_datasets: "./chatml_datasets" # Again for tokenization part
+  tokenized_datasets: "./tokenized_datasets"  # Where tokenized datasets will be saved
+  tokenizer_path: "./local_model"  # Path to the tokenizer model
+output_config:
+  model_save_path: "./finetuned_model"  # Where the fine-tuned model/tokenizer will be saved
+  output_dir: "./checkpoints_model"  # Training checkpoints ( the name of the run on wandb )
+  logging_dir: "./logs_model"  # TensorBoard logs
+pipeline_order:
+  - script: "convert_to_chatml.py"
+  - script: "chatml_cache_tokenzier.py"
+  - script: "main.py"

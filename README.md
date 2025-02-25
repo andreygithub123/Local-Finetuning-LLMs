@@ -6,6 +6,6 @@ This repository displayes the strategy that I used in order to finetune a MISTRA
 (after making a virtual env)
 pip install -r requirements.txt ( it is recommended to use python 3.10 )
 
-```
+````
 
 ![image](https://github.com/user-attachments/assets/4ed2e15a-7c90-4242-bfaf-4e8bf23eadfd)

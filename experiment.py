@@ -15,6 +15,7 @@ import random
 def random_func():
     return random.randint(1, 100)
 
+<<<<<<< HEAD
 def update_python_file():
     file_path = "generated_code.py"  # Change this to your target .py file
 
@@ -32,3 +33,10 @@ def update_python_file():
 
     except Exception as e:
         print(f"Error updating {file_path}: {e}")
+=======
+
+import random
+
+def generate_random_number():
+    return random.randint(1, 100)
+>>>>>>> 65c5a3e (tuned hyperparams updated)

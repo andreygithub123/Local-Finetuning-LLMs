@@ -6,3 +6,22 @@
 #
 #
 #
+Here's a simple random function in Python:
+
+```python
+import random
+
+def generate_random_value(min_value, max_value):
+    """
+    Generates a random value between the specified minimum and maximum values.
+    """
+    random_value = random.randint(min_value, max_value)
+    return random_value
+
+if __name__ == "__main__":
+    min_value = 1
+    max_value = 100
+    print("Random value between", min_value, "and", max_value, "is:", generate_random_value(min_value, max_value))
+```
+
+This function takes in two arguments, `min_value` and `max_value`, and generates a random integer between them using the `random.randint()` function from the `random` module. The function then returns the randomly generated/n

@@ -8,3 +8,9 @@ def generate_password(length=12):
 
 # Example usage
 print(generate_password())
+
+
+import random
+
+def random_func():
+    return random.randint(1, 100)

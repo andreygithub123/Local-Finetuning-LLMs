@@ -32,3 +32,13 @@ def update_python_file():
 
     except Exception as e:
         print(f"Error updating {file_path}: {e}")
+
+
+import random
+
+def random_numbers(n):
+  return [random.randint(1, 100) for _ in range(n)]
+
+def shuffle_list(lst):
+  random.shuffle(lst)
+  return lst

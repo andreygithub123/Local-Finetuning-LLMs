@@ -42,3 +42,14 @@ def random_numbers(n):
 def shuffle_list(lst):
   random.shuffle(lst)
   return lst
+
+
+```python
+import random
+
+def random_func():
+    a = [random.randint(1, 10) for _ in range(10)]
+    b = [i * 2 for i in a if i % 2 == 0]
+    c = [i * 3 for i in a if i % 2 != 0]
+    return b + c
+```

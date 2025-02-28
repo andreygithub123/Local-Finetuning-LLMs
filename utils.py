@@ -44,7 +44,7 @@ def shuffle_list(lst):
   return lst
 
 
-```python
+
 import random
 
 def random_func():
@@ -52,15 +52,15 @@ def random_func():
     b = [i * 2 for i in a if i % 2 == 0]
     c = [i * 3 for i in a if i % 2 != 0]
     return b + c
-```
 
 
-```python
+
+
 import random
 
 def random_func():
     return random.randint(1, 100)
-```
+
 
 
 def greet(name):
@@ -81,7 +81,7 @@ def find_even_nums(nums):
     return even_nums
 
 
-```python
+
 def find_anagrams(word_list, target_word):
     anagrams = []
     target_word_sorted = ''.join(sorted(target_word))
@@ -92,7 +92,7 @@ def find_anagrams(word_list, target_word):
             anagrams.append(word)
 
     return anagrams
-```
+
 
 
 def generate_unique_ids(n, charset="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"):
@@ -106,7 +106,7 @@ def generate_unique_ids(n, charset="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     return list(unique_ids)
 
 
-```python
+
 def generate_prime_numbers(n):
     primes = []
 
@@ -121,4 +121,4 @@ def generate_prime_numbers(n):
     
     return primes
 
-```
+

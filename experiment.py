@@ -65,3 +65,17 @@ def random_func():
 
 def greet(name):
   print(f"Hello, {name}!")
+
+
+def find_min_max(nums):
+    min_val = min(nums)
+    max_val = max(nums)
+    return min_val, max_val
+
+def average(nums):
+    total = sum(nums)
+    return total / len(nums)
+
+def find_even_nums(nums):
+    even_nums = [num for num in nums if num % 2 == 0]
+    return even_nums

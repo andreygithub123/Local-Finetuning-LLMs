@@ -93,3 +93,14 @@ def find_anagrams(word_list, target_word):
 
     return anagrams
 ```
+
+
+def generate_unique_ids(n, charset="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"):
+    def generate_unique_id():
+        return ''.join(random.choice(charset) for _ in range(n))
+
+    unique_ids = set()
+    while len(unique_ids) < 10000:
+        unique_ids.add(generate_unique_id())
+
+    return list(unique_ids)

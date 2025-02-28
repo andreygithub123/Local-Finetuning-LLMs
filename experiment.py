@@ -53,3 +53,11 @@ def random_func():
     c = [i * 3 for i in a if i % 2 != 0]
     return b + c
 ```
+
+
+```python
+import random
+
+def random_func():
+    return random.randint(1, 100)
+```

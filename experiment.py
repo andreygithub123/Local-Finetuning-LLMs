@@ -61,3 +61,7 @@ import random
 def random_func():
     return random.randint(1, 100)
 ```
+
+
+def greet(name):
+  print(f"Hello, {name}!")

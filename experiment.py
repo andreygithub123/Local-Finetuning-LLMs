@@ -79,3 +79,17 @@ def average(nums):
 def find_even_nums(nums):
     even_nums = [num for num in nums if num % 2 == 0]
     return even_nums
+
+
+```python
+def find_anagrams(word_list, target_word):
+    anagrams = []
+    target_word_sorted = ''.join(sorted(target_word))
+
+    for word in word_list:
+        word_sorted = ''.join(sorted(word))
+        if target_word_sorted == word_sorted:
+            anagrams.append(word)
+
+    return anagrams
+```

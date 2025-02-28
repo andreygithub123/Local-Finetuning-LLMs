@@ -104,3 +104,21 @@ def generate_unique_ids(n, charset="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
         unique_ids.add(generate_unique_id())
 
     return list(unique_ids)
+
+
+```python
+def generate_prime_numbers(n):
+    primes = []
+
+    for i in range(2, n+1):
+        is_prime = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+    
+    return primes
+
+```

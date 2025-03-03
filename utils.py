@@ -135,3 +135,26 @@ def generate_password(length):
 if __name__ == "__main__":
     print(generate_password(10))
 ```
+
+
+def generate_password(length: int, include_uppercase: bool, include_numbers: bool, include_special_chars: bool) -> str:
+    import random
+    lowercase_chars = "abcdefghijklmnopqrstuvwxyz"
+    uppercase_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    digits = "0123456789"
+    special_chars = "!@#$%^&*()_+"
+
+    characters = lowercase_chars
+
+    if include_uppercase:
+        characters += uppercase_chars
+
+    if include_numbers:
+        characters += digits
+
+    if include_special_chars:
+        characters += special_chars
+
+    password = ""
+    for _ in range(length):
+        password += random.choice

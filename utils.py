@@ -123,8 +123,6 @@ def generate_prime_numbers(n):
 
 
 
-
-```python
 import random
 
 def generate_password(length):
@@ -134,7 +132,7 @@ def generate_password(length):
 
 if __name__ == "__main__":
     print(generate_password(10))
-```
+
 
 
 def generate_password(length: int, include_uppercase: bool, include_numbers: bool, include_special_chars: bool) -> str:
@@ -158,10 +156,3 @@ def generate_password(length: int, include_uppercase: bool, include_numbers: boo
     password = ""
     for _ in range(length):
         password += random.choice
-
-
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    else:
-        return n * factorial(n-1)

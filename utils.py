@@ -213,3 +213,11 @@ def is_valid_password(password):
             has_digit = True
 
     return has_upper and has_lower and has_digit
+
+
+def complex_function(input_list, output_function, iterations=100):
+    result_list = []
+    for i in range(iterations):
+        current_value = output_function(input_list[i])
+        result_list.append(current_value)
+    return result_list

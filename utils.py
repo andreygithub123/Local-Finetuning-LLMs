@@ -221,3 +221,17 @@ def complex_function(input_list, output_function, iterations=100):
         current_value = output_function(input_list[i])
         result_list.append(current_value)
     return result_list
+
+
+def find_common_elements(list1, list2):
+    return list(set(list1) & set(list2))
+
+def merge_lists(list1, list2):
+    return list1 + list2
+
+def remove_duplicates(list1, list2):
+    merged = merge_lists(list1, list2)
+    return [item for item in merged if merged.count(item) == 1]
+
+def sort_list(list_to_sort):
+    return sorted(list_to_sort)

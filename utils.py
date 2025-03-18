@@ -249,3 +249,23 @@ def validate_email(email):
 def find_common_elements(list1, list2):
     common_elements = set(list1) & set(list2)
     return list(common_elements)
+
+
+```python
+def find_closest_pair(points):
+    if len(points) < 2:
+        return None
+
+    closest_distance = float('inf')
+    closest_pair = None
+
+    for i in range(len(points)):
+        for j in range(i + 1, len(points)):
+            distance = ((points[i][0] - points[j][0])**2 +
+                        (points[i][1] - points[j][1])**2)**0.5
+            if distance < closest_distance:
+                closest_distance = distance
+                closest_pair = (points[i], points[j])
+
+    return closest_pair
+```

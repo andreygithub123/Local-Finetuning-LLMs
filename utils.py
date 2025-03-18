@@ -235,3 +235,12 @@ def remove_duplicates(list1, list2):
 
 def sort_list(list_to_sort):
     return sorted(list_to_sort)
+
+
+```python
+import re
+
+def validate_email(email):
+    email_regex = re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
+    return email_regex.match(email) is not None
+```

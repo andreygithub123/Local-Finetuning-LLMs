@@ -244,3 +244,8 @@ def validate_email(email):
     email_regex = re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
     return email_regex.match(email) is not None
 ```
+
+
+def find_common_elements(list1, list2):
+    common_elements = set(list1) & set(list2)
+    return list(common_elements)

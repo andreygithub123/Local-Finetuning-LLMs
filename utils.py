@@ -320,3 +320,18 @@ def knapsack(weights, values, capacity):
     current_capacity = capacity
     for i in range(n, 0, -1):
         if
+
+
+def find_closest_pair(points):
+    n = len(points)
+    min_distance = float('inf')
+    closest_pair = []
+
+    for i in range(n):
+        for j in range(i + 1, n):
+            distance = ((points[i][0] - points[j][0])**2 + (points[i][1] - points[j][1])**2)**0.5
+            if distance < min_distance:
+                min_distance = distance
+                closest_pair = [points[i], points[j]]
+
+    return closest_pair

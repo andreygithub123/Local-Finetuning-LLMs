@@ -335,3 +335,17 @@ def find_closest_pair(points):
                 closest_pair = [points[i], points[j]]
 
     return closest_pair
+
+
+from typing import List
+
+def find_unique_pairs(nums: List[int]) -> List[List[int]]:
+    unique_elements = set(nums)
+    unique_pairs = []
+
+    for x in unique_elements:
+        for y in unique_elements:
+            if x != y and (x, y) not in unique_pairs:
+                unique_pairs.append((x, y))
+
+    return unique_pairs

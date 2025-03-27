@@ -349,3 +349,13 @@ def find_unique_pairs(nums: List[int]) -> List[List[int]]:
                 unique_pairs.append((x, y))
 
     return unique_pairs
+
+
+def generate_unique_ids(n, prefix):
+    import random
+    result = []
+    for _ in range(n):
+        id = prefix + str(random.randint(1000, 9999))
+        if id not in result:
+            result.append(id)
+    return result

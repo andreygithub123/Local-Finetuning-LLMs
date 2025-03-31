@@ -359,3 +359,26 @@ def generate_unique_ids(n, prefix):
         if id not in result:
             result.append(id)
     return result
+
+
+```python
+def generate_random_password(length=8, use_special_chars=False, use_uppercase=False, use_numbers=False):
+    import random
+    characters = 'abcdefghijklmnopqrstuvwxyz'
+
+    if use_uppercase:
+        characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    if use_numbers:
+        characters += '0123456789'
+
+    if use_special_chars:
+        characters += '!@#$%^&*()_+-='
+
+    password = ''
+
+    for i in range(length):
+        password += random.choice(characters)
+
+    return password
+```
